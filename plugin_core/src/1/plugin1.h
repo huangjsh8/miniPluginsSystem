@@ -6,6 +6,7 @@ class plugin_1:public Plugin
     plugin_1(){
         name = "plugin_1";
     };
+    ~plugin_1();
     virtual void display() override;
 
 };

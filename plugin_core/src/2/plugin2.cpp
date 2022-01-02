@@ -2,6 +2,10 @@
 
 void plugin_2::display()
 {
-    std::cout<<"2: second plugin name is  "<<name<<std::endl;
+    std::cout<<"[DEBUG] Hi everyone, here is the second plugin:  "<<name<<std::endl;
 }
+plugin_2::~plugin_2()
+{ 
+    
+};
 REGISTER_PLUGIN(plugin_2);

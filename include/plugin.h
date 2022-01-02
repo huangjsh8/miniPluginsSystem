@@ -22,11 +22,11 @@ struct PluginInfo
 };
 
 
-void regist_plugin(PluginInfo plugin_info);
+void regist_plugin(PluginInfo *plugin_info);
 
 class PluginLoaderHelper{
 public:
-    PluginLoaderHelper(PluginInfo info){
+    PluginLoaderHelper(PluginInfo *info){
         regist_plugin(info);
     }
 
@@ -40,7 +40,7 @@ public:
         return &object;                           \
     };                                        \
     PluginInfo class_name##_info(get_##class_name##_instance(),#class_name);  \
-    static PluginLoaderHelper class_name##_plugin_loader_helper(class_name##_info);
+    static PluginLoaderHelper class_name##_plugin_loader_helper(&class_name##_info);
 
 #endif
 

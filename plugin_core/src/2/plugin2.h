@@ -7,5 +7,6 @@ class plugin_2:public Plugin
         name = "plugin_2";
     };
     virtual void display() override;
+    ~plugin_2();
 
 };

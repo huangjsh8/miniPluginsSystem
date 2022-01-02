@@ -2,8 +2,9 @@
 
 int main()
 {
-    char * lib_name = "libMyPlugin.so";
+    std::string lib_name = "./plugin_core/libMyPlugin.so";
     load_a_plugin(lib_name);
     display_all_info();
+    close_plugins();
     return 0;
 }
