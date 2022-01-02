@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.4.6)
-project(MyPlugin)
+project(MyPluginMaster)
 
-set(CMAKE_CXX_COMPLIRE "g++")
-set(CMAKE_C_FLAGS_ "{CMAKE_C_FLAGS} -g -fPIC -Wall -Werror")
-set(CMAKE_CXX_FLAGS_ "{CMAKE_CXX_FLAGS} -std::c++14 -g -fPIC -Wall -Werror")
+# set(CMAKE_CXX_COMPLIRE "g++")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} --std=c++14 -g -O0 -fPIC -Wall -Werror")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g  -O0 --std=c++14 -fPIC -Wall -Werror")
 
 message("${PROJECT_SOURCE_DIR}/../build")
 include_directories("${PROJECT_SOURCE_DIR}/..")

@@ -14,8 +14,8 @@ void display_all_info(){
     }
 }
 
-void load_a_plugin(const char* libname){
-    void * handle = dlopen(libname,RTLD_LAZY);
+void load_a_plugin(std::string libname){
+    void * handle = dlopen(libname.c_str(),RTLD_LAZY);
     if(handle!=NULL){
         std::cout<<"[INFO] load "<<libname<<std::endl;
     }
