@@ -10,3 +10,5 @@ class plugin_1:public Plugin
     virtual void display() override;
 
 };
+
+REGISTER_PLUGIN(plugin_1)   

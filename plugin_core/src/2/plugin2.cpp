@@ -8,4 +8,3 @@ plugin_2::~plugin_2()
 { 
     
 };
-REGISTER_PLUGIN(plugin_2);

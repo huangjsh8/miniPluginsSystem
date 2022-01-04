@@ -10,4 +10,3 @@ plugin_1::~plugin_1()
 
 };
 
-REGISTER_PLUGIN(plugin_1)   

@@ -10,3 +10,4 @@ class plugin_2:public Plugin
     ~plugin_2();
 
 };
+REGISTER_PLUGIN(plugin_2);
